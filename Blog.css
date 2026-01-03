@@ -1,0 +1,79 @@
+/* Blog Hero */
+.blog-hero {
+  height: 50vh;
+  background: url('https://source.unsplash.com/1600x600/?books,study,education') center/cover no-repeat;
+}
+
+.blog-hero .overlay {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.blog-hero h1 {
+  font-size: 50px;
+}
+
+.blog-hero span {
+  color: #b82c2c;
+}
+
+/* Blog Posts Section */
+.blog-posts {
+  padding: 50px 20px;
+  display: grid;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.blog-post {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.blog-post h2 {
+  margin-bottom: 10px;
+  color: #b82c2c;
+}
+
+.blog-post p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.blog-post small {
+  color: gray;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  background: #b82c2c;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background: #8f1f1f;
+  transition: 0.3s;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .blog-posts {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-hero h1 {
+    font-size: 35px;
+  }
+}
